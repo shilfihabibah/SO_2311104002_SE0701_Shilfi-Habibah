@@ -19,12 +19,15 @@ Perangkat lunak source code explorer yang bersifat open-source, berfungsi untuk 
 
 ### 1. Mengunduh software serta file praktikum
 ![Download Tools](image/download-tools.jpeg)
+
 File yang diunduh meliputi VirtualBox, development-system.ova, backend.ova, dan xinu-vbox.rar dari drive yang disediakan oleh asisten praktikum.
 ### 2. Menginstal VirtualBox
 ![Install VirtualBox](image/install-virtualbox.jpeg)
+
 Langkah instalasi VirtualBox dilakukan dengan menjalankan file installer dan mengikuti semua langkah instalasi (Next) sampai selesai.
 ### 3. Mengimport file .ova ke VirtualBox
 ![Import OVA](image/import-ova.jpeg)
+
 Setelah instalasi selesai, file development-system.ova dan backend.ova diimport ke VirtualBox.
 Pengaturan tambahan:
 - Backend.ova  
@@ -33,9 +36,10 @@ Pengaturan tambahan:
 - Development-system.ova  
   - Enable 3D Acceleration  
   - Ubah port serial menjadi COM1  
-![Import OVA](image/import-ova.jpeg)
+
 ### 4. Menjalankan Xinu
 ![Import OVA](image/run-xinu.jpeg)
+
 Langkah:
 - Run development-system , nanti akan loading dan proses berjalan sampai muncul tampilan awal xinu , kemudian kita masukan sandi “xinurocks” sampai muncul seperti ss an diatas
 - Run backend juga setelah proses loading selesai juga tampil seperti ss an diatas
