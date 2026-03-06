@@ -18,11 +18,11 @@ Perangkat lunak source code explorer yang bersifat open-source, berfungsi untuk 
 ## B. Guided
 
 ### 1. Mengunduh software serta file praktikum
-![Download Tools](image/download-tools.jpeg)
+![Download Tools](Image/download-tools.jpeg)
 
 File yang diunduh meliputi VirtualBox, development-system.ova, backend.ova, dan xinu-vbox.rar dari drive yang disediakan oleh asisten praktikum.
 ### 2. Menginstal VirtualBox
-![Install VirtualBox](image/install-virtualbox.jpeg)
+![Install VirtualBox](Image/install-virtualbox.jpeg)
 
 Langkah instalasi VirtualBox dilakukan dengan menjalankan file installer dan mengikuti semua langkah instalasi (Next) sampai selesai.
 
