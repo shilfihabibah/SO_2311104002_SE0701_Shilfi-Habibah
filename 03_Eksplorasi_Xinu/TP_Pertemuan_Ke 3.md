@@ -19,13 +19,13 @@ Proses menyalakan komputer dan memuat sistem operasi ke dalam memori utama (RAM)
 Langkah - langkah : 
 1. Buka VirtualBox dan start development-system.ova 
 2. Login pada development-system vm menggunakan password (xinurocks)
-3. setelah berhasil login muncul terminal seperti di gambar ![Terminal development-system](image/Terminal_development-system.jpeg) 
-4. ketik "cd xinu/compile" pada terminal untuk pindah ke directory xinu dan enter untuk menjalankan perintah. Fungsi nya untuk pindah direktori ke xinu, tampilan seperti gambar berikut : ![pindah ke directory xinu](image/pindah_ke_directory_xinu.jpeg)
-5. ketik "make clean" pada terminal untuk menghapus file kompilasi sebelumnya, tampilan seperti gambar berikut : ![make clean](image/make_clean.jpeg)
-6. ketik "make" pada terminal untuk melakukan proses kompilasi source code jadi file yang bisa dijalankan sistem, tampilan seperti gambar berikut : ![make](image/make.jpeg)
-7. ketik "sudo minicom" untuk menjalankan aplikasi minicom sebagai alat komunikasi melalui serial port sehingga kita bisa interaksi dengan sistem xinu yang berjalan pada backend vm, ketika sudah dienter akan diarahkan ke isi password yaitu kita isi xinurocks. Tampilan seperti gambar berikut : ![sudo minicom](image/sudo_minicom.jpeg)
+3. setelah berhasil login muncul terminal seperti di gambar ![Terminal development-system](Image/Terminal_development-system.jpeg) 
+4. ketik "cd xinu/compile" pada terminal untuk pindah ke directory xinu dan enter untuk menjalankan perintah. Fungsi nya untuk pindah direktori ke xinu, tampilan seperti gambar berikut : ![pindah ke directory xinu](Image/pindah_ke_directory_xinu.jpeg)
+5. ketik "make clean" pada terminal untuk menghapus file kompilasi sebelumnya, tampilan seperti gambar berikut : ![make clean](Image/make_clean.jpeg)
+6. ketik "make" pada terminal untuk melakukan proses kompilasi source code jadi file yang bisa dijalankan sistem, tampilan seperti gambar berikut : ![make](Image/make.jpeg)
+7. ketik "sudo minicom" untuk menjalankan aplikasi minicom sebagai alat komunikasi melalui serial port sehingga kita bisa interaksi dengan sistem xinu yang berjalan pada backend vm, ketika sudah dienter akan diarahkan ke isi password yaitu kita isi xinurocks. Tampilan seperti gambar berikut : ![sudo minicom](Image/sudo_minicom.jpeg)
 8. setelah itu jalankan backend di virtualbox 
-9. ketik perintah "help" di terminal untuk menampilkan semua perintah xinu, tampilan seperti gambar berikut : ![help](image/help.jpeg)
+9. ketik perintah "help" di terminal untuk menampilkan semua perintah xinu, tampilan seperti gambar berikut : ![help](Image/help.jpeg)
 
 ## C. Unguided
 
@@ -52,8 +52,8 @@ jawab : Pada hasil ps yang terlihat tidak ada proses yang berada pada state susp
 11. Berapa PID (Process ID) dari Main process?
 jawab : 4
 note : 
-- ![jawaban n0 3-5](image/jawaban_3-5.jpeg)
-- ![jawaban n0 6-11](image/jawaban_6-11.jpeg)
+- ![jawaban n0 3-5](Image/jawaban_3-5.jpeg)
+- ![jawaban n0 6-11](Image/jawaban_6-11.jpeg)
 
 ## C. Referensi
 
