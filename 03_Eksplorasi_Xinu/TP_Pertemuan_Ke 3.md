@@ -55,7 +55,7 @@ note :
 - ![jawaban n0 3-5](Image/jawaban_3-5.jpeg)
 - ![jawaban n0 6-11](Image/jawaban_6-11.jpeg)
 
-## C. Referensi
+## D. Referensi
 
 1. https://blog.dewaweb.com/mengenal-cli-adalah/
 2. https://www.pojokata.com/2025/07/memahami-shell-dalam-komputasi-sebagai.html
