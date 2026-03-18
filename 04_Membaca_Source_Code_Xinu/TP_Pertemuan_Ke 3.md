@@ -73,14 +73,14 @@ Jawab:
 File yang menyimpan banner Xinu terdapat pada file `shell.h` di direktori `/include`. File ini berisi string banner yang akan ditampilkan pada saat sistem dijalankan.
 Untuk melihat isi file tersebut digunakan perintah: cd xinu/include lalu nano shell.h
 
-    ![unguided 3a](Image/unguided_3a.jpeg)
+   ![unguided 3a](Image/unguided_3a.jpeg)
 
 ### b. Carilah file yang menyimpan banner Xinu! Hint: file berektensi .c pada direktori xinu/shell
 
 Jawab:  
 Untuk mengetahui file yang menampilkan banner Xinu, dilakukan dengan membuka file shell.c pada direktori /shell menggunakan perintah: cd xinu/shell lalu nano shell.c
 
-    ![unguided 3b](Image/unguided_3b.jpeg)
+   ![unguided 3b](Image/unguided_3b.jpeg)
 
 Pada file tersebut ditemukan bahwa banner Xinu ditampilkan menggunakan fungsi fprintf yang mencetak string SHELL_STRMSG ke laya
 
