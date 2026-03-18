@@ -30,7 +30,7 @@ Beberapa file penting dalam Xinu antara lain:
 Langkah - langkah : 
 1. Download file source code xinu yang tersedia pada attempt jurnal praktikum di LMS 
 2. Setelah di download extract file lalu Jalankan SourceTrail ![Tampilan Sourcetrail](Image/Tampilan_Sourcetrail.jpeg)
-3. Seletah itu buat new poroject dengan name project NIM_Nama terus location e bebas  ![Create Project](Image/Create_Project.jpeg)
+3. Setelah itu buat new poroject dengan name project NIM_Nama terus location e bebas  ![Create Project](Image/Create_Project.jpeg)
 4. Klik Add Spurce Grup bagian kanan bawah akan muncul type bahasa yang akan digunakan, kita akan memilih C terus klik Empty C Source Group ![Bahasa Pemrograman](Image/Bahasa_Pemrograman.jpeg)
 5. Setelah itu akan muncul tampilan lagi ke menu Files & Directories to Index klik tanda + lalu klik titik 3 , kemudian masuk dan import ke vile xinu-vbox yang sebelumnya sudah di download dan di extract ![xinu-vbox](Image/xinu-vbox.jpeg)
 6. Masih di halaman yang sama , scroll ke bagian Source File Extentions tambahkan .S ![.S](Image/.S.jpeg)
@@ -42,12 +42,16 @@ Langkah - langkah :
 
 ## C. Unguided
 
-1. Apa nama image yang dihasilkan setelah melakukan kompilasi pada Xinu? Berapa ukuran file tersebut? Ada pada folder apa file image tersebut?
-Jawab : 
-Nama file image hasil kompilasi adalah **xinu.elf** , file tersebut berada pada folder **/compile** dan ukuran file bervariasi tergantung sistem, biasanya sekitar beberapa ratus KB. ![unguided 1](Image/unguided_1.jpeg)
+### 1. Apa nama image yang dihasilkan setelah melakukan kompilasi pada Xinu? Berapa ukuran file tersebut? Ada pada folder apa file image tersebut?
 
-2. Carilah struktur data dari proses pada Xinu OS. Struktur data proses ada pada file apa? Informasi apa saja yang disimpan dalam struktur data tersebut? 
-Jawab : 
+Jawab :  
+Nama file image hasil kompilasi adalah **xinu.elf** , file tersebut berada pada folder **/compile** dan ukuran file bervariasi tergantung sistem, biasanya sekitar beberapa ratus KB.  
+
+![unguided 1](Image/unguided_1.jpeg)
+
+### 2. Carilah struktur data dari proses pada Xinu OS. Struktur data proses ada pada file apa? Informasi apa saja yang disimpan dalam struktur data tersebut?
+
+Jawab :  
 Struktur data proses pada Xinu terdapat pada file **process.h** (di folder `/include`).  
 Struktur ini biasanya berupa `struct procent` yang menyimpan informasi seperti:
 - PID (Process ID)
@@ -58,19 +62,25 @@ Struktur ini biasanya berupa `struct procent` yang menyimpan informasi seperti:
 - Name proses
 - Message
 - Parent process
+
 ![unguided 2](Image/unguided_2.jpeg)
 
-3.  Modifikasi Welcome Banner Xinu
-### a. Carilah file yang menyimpan banner Xinu! Hint: file berekstensi .h pada direktori xinu/include
+### 3.  Modifikasi Welcome Banner Xinu
+
+#### a. Carilah file yang menyimpan banner Xinu! Hint: file berekstensi .h pada direktori xinu/include
+
 Jawab:  
 File yang menyimpan banner Xinu terdapat pada file `shell.h` di direktori `/include`. File ini berisi string banner yang akan ditampilkan pada saat sistem dijalankan.
 Untuk melihat isi file tersebut digunakan perintah: cd xinu/include lalu nano shell.h
 ![unguided 3a](Image/unguided_3a.jpeg)
+
 ### b. Carilah file yang menyimpan banner Xinu! Hint: file berektensi .c pada direktori xinu/shell
+
 Jawab:  
 Untuk mengetahui file yang menampilkan banner Xinu, dilakukan dengan membuka file shell.c pada direktori /shell menggunakan perintah: cd xinu/shell lalu nano shell.c
 ![unguided 3b](Image/unguided_3b.jpeg)
 Pada file tersebut ditemukan bahwa banner Xinu ditampilkan menggunakan fungsi fprintf yang mencetak string SHELL_STRMSG ke laya
+
 ### c. Modifikasi welcome banner Xinu
 Modifikasi banner Xinu dilakukan dengan mengubah isi file `shell.h` yang berada pada direktori `/include`. File ini berisi string banner utama (`SHELL_STRMSG`) serta tampilan ASCII art (`SHELL_BAN0` hingga `SHELL_BAN9`).
 - Langkah yang dilakukan adalah sebagai berikut: cd xinu/include lalu nano shell.h 
@@ -78,7 +88,8 @@ Modifikasi banner Xinu dilakukan dengan mengubah isi file `shell.h` yang berada 
     #define SHELL_BAN1 "------------ SHILFI HABIBAH ------------"
     #define SHELL_BAN8 "------------ 2311104002 ----------------"
 ![unguided 3c](Image/unguided_3c.jpeg)
-### Compile dan menjalankan xinu 
+
+#### d. Compile dan menjalankan xinu 
 - Setelah modifikasi selesai dilakukan, langkah berikutnya adalah melakukan proses kompilasi ulang dan menjalankan sistem Xinu untuk melihat hasil perubahan banner.
 - Langkah-langkah yang dilakukan:
     cd ../compile
