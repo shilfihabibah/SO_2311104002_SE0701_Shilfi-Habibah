@@ -92,5 +92,7 @@ Modifikasi banner Xinu dilakukan dengan mengubah isi file `shell.h` yang berada 
 
 1. https://medium.com/@itafatmawati7527/membaca-source-code-xinu-03b93019c5a5
 2. https://medium.com/@alfreda1808/membaca-source-code-xinu-53f35a391a78
+3. https://www.youtube.com/watch?v=rWcxu5KYo8M
+4. https://telkomuniversityofficial-my.sharepoint.com/shared?listurl=%2Fpersonal%2Fmaghaz%5Fstudent%5Ftelkomuniversity%5Fac%5Fid%2FDocuments&viewid=dcc57231%2D081d%2D4f7c%2Dbcc5%2Daea7fc1aa043&id=%2Fpersonal%2Fmaghaz%5Fstudent%5Ftelkomuniversity%5Fac%5Fid%2FDocuments%2F2026%2F00%2E%20Modul%20Praktikum%20Sistem%20Operasi%20SE%202526%2D2%2Epdf&parent=%2Fpersonal%2Fmaghaz%5Fstudent%5Ftelkomuniversity%5Fac%5Fid%2FDocuments%2F2026
 
 
