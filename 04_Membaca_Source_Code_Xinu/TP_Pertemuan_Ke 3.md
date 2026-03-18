@@ -72,13 +72,16 @@ Struktur ini biasanya berupa `struct procent` yang menyimpan informasi seperti:
 Jawab:  
 File yang menyimpan banner Xinu terdapat pada file `shell.h` di direktori `/include`. File ini berisi string banner yang akan ditampilkan pada saat sistem dijalankan.
 Untuk melihat isi file tersebut digunakan perintah: cd xinu/include lalu nano shell.h
+
 ![unguided 3a](Image/unguided_3a.jpeg)
 
 ### b. Carilah file yang menyimpan banner Xinu! Hint: file berektensi .c pada direktori xinu/shell
 
 Jawab:  
 Untuk mengetahui file yang menampilkan banner Xinu, dilakukan dengan membuka file shell.c pada direktori /shell menggunakan perintah: cd xinu/shell lalu nano shell.c
+
 ![unguided 3b](Image/unguided_3b.jpeg)
+
 Pada file tersebut ditemukan bahwa banner Xinu ditampilkan menggunakan fungsi fprintf yang mencetak string SHELL_STRMSG ke laya
 
 ### c. Modifikasi welcome banner Xinu
@@ -87,6 +90,7 @@ Modifikasi banner Xinu dilakukan dengan mengubah isi file `shell.h` yang berada 
 - ubah : 
     #define SHELL_BAN1 "------------ SHILFI HABIBAH ------------"
     #define SHELL_BAN8 "------------ 2311104002 ----------------"
+
 ![unguided 3c](Image/unguided_3c.jpeg)
 
 #### d. Compile dan menjalankan xinu 
@@ -97,6 +101,7 @@ Modifikasi banner Xinu dilakukan dengan mengubah isi file `shell.h` yang berada 
     make
     sudo minicom
 - Setelah itu, virtual machine backend dijalankan kembali agar sistem Xinu dapat dieksekusi. Hasilnya, banner yang ditampilkan pada layar telah berubah sesuai dengan modifikasi yang telah dilakukan, yaitu menampilkan teks tambahan serta nama dan NIM pada bagian ASCII banner.
+
 ![unguided 3d](Image/unguided_3d.jpeg)
 
 ## D. Referensi
