@@ -24,8 +24,11 @@ Langkah - langkah :
 
 ### 1. Jawablah pertanyaan berikut ini:
 a. Berapa banyaknya maksimum proses yang ada pada Xinu?
+
 b. Berapa maksimal panjang nama suatu proses pada Xinu?
+
 c. Berapa nilai prioritas awal pada saat proses dibuat?
+
 d. Ada berapa total state pada Xinu? Sebutkan!
 
 Jawab :  
