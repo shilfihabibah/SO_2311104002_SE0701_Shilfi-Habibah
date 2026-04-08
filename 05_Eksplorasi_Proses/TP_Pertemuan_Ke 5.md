@@ -85,7 +85,7 @@ Langkah pengerjaan :
 5. ketik make clean , make , sudo minicom
 6. ketik ps 
 
-### 3. Ubahlah perintah uptime pada Xinu sehingga menampilkan lamanya Xinu sejak booting hanya dalam satuan menit.
+### 4. Ubahlah perintah uptime pada Xinu sehingga menampilkan lamanya Xinu sejak booting hanya dalam satuan menit.
 Langkah pengerjaan:
 - Modifikasi source code pada file xsh_uptime.c
 - Kompilasi ulang Xinu dengan perintah seperti pada modul sebelumnya 
