@@ -1,4 +1,4 @@
-# <h1 align="center">Laporan Praktikum Modul 7  <br> Shell </h1>
+# <h1 align="center">Laporan Praktikum Modul 10  <br> Shell </h1>
 <p align="center">SHILFI HABIBAH - 2311104002</p>
 
 ## A. Dasar Teori

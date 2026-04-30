@@ -1,4 +1,4 @@
-# <h1 align="center">Laporan Praktikum Modul 7  <br> Syscall Xinu </h1>
+# <h1 align="center">Laporan Praktikum Modul 9  <br> Syscall Xinu </h1>
 <p align="center">SHILFI HABIBAH - 2311104002</p>
 
 ## A. Dasar Teori
@@ -11,20 +11,6 @@ Syscall adalah antarmuka layanan yang disediakan oleh sistem operasi untuk digun
 - Layanan inti dijalankan sesuai permintaan proses. Misalnya, jika yang dipanggil adalah freemem(), maka tugasnya adalah membebaskan blok memori pada alamat tertentu.
 - Setelah selesai, interupsi diaktifkan kembali agar proses lain bisa berjalan.
 - Hasil eksekusi (berhasil atau gagal) dikembalikan kepada proses pemanggil.
-
-## B. Guided
-
-Langkah - langkah : 
-1. Running Development-system yang di VirtualBox
-2. Ketik ls pada terminal
-3. Download script modul : wget agha.work/modul9.sh
-4. Cek isi file : cat modul9.sh 
-5. Beri permission : chmod +x modul9.sh
-6. Jalankan script ./modul9.sh
-7. Compile project dengan cd xinu_m9/compile/ lalu make clean setelah itu make
-8. Jalankan Xinu dengan sudo minicom
-9. Cek syscall baru dengan ketik help
-10. Jalankan syscall dengan ketik uptime
 
 ## C. Unguided
 
