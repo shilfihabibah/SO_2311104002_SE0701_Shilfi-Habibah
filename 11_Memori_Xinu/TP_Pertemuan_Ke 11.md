@@ -6,7 +6,7 @@
 ### a. Pengertian 
 Efisiensi memori manajemen adalah fondasi utama dalam sistem operasi. Xinu, sebagai OS minimalis menerapkan mekanisme yang cerdas untuk menjamin penanganan yang efektif terhadap alokasi memori statistik maupun dinamis. Pada materi ini, kita akan memahami struktur memori pada Xinu.
 
-## C. Unguided
+## B. Unguided
 
 ### 1. Buatlah perintah baru bernama freememory yang memiliki dua fungsi berikut:
 a. Menampilkan seluruh free memory block yang tercatat dalam free memory list pada Xinu.
