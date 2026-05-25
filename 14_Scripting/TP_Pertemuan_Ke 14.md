@@ -80,10 +80,11 @@ a. Buatlah file bernama list_direktori.sh. Jangan lupa untuk mengubah ijin scrip
 sehingga dapat dieksekusi.
 
    ![6a](Image/6a.jpeg)
+   
 b. Buatlah script sehingga menampilkan semua file pada direktori tersebut.
    
    ![6b](Image/6b.jpeg)
-   
+
 ## D. Referensi
 
 1. https://telkomuniversityofficial-my.sharepoint.com/shared?listurl=https%3A%2F%2Ftelkomuniversityofficial-my.sharepoint.com%2Fpersonal%2Fmaghaz_student_telkomuniversity_ac_id%2FDocuments&id=%2Fpersonal%2Fmaghaz_student_telkomuniversity_ac_id%2FDocuments%2F2026%2F00.+Modul+Praktikum+Sistem+Operasi+SE+2526-2.pdf&parent=%2Fpersonal%2Fmaghaz_student_telkomuniversity_ac_id%2FDocuments%2F2026&shareLink=1&ga=1
