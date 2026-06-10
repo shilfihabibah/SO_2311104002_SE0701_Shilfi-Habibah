@@ -181,9 +181,8 @@ Lakukan perintah berikut ini untuk mengetahui daftar key yang Anda punya dan fin
 c.  Jalankan perintah ini : gpg –-armor –-export nama@email.anda > mypublic_key.asc
 File mypublic_key.asc adalah file yang akan dibagikan kepada teman-teman Anda. Teman Anda akan menggunakan kunci publik Anda jika ingin mengirim pesan rahasia kepada Anda. Hanya Anda yang dapat membaca pesan tersebut karena hanya mempunyai kunci privat yang bersesuaian dengan kunci publik Anda. 
 
-- Tujuan: Mengonversi kunci publik ke format .asc agar bisa dibagikan kepada rekan praktikan lain.
-- Langkah: Menjalankan perintah gpg --armor --export [email] > [NIM].asc. File kemudian di-rename menjadi [NIM].asc.
-- Catatan Teknis: Terdapat kendala teknis pada link pengumpulan folder Google Drive, di mana tidak ditemukan folder yang sesuai dengan kelas SE0701, sehingga file dibagikan secara lokal untuk kebutuhan praktikum.
+- Tujuan: Mengonversi kunci publik ke format .asc agar bisa dibagikan kepada rekan praktikan lain melalui folder bersama.
+- Langkah: Menjalankan perintah gpg --armor --export [email_anda] > 2311104002.asc. File tersebut kemudian diunggah (upload) ke dalam folder OneDrive kelas SE 07-01 agar dapat diakses oleh teman sekelas.
 - Bukti: 
 
 ![5c](Image/5c.jpeg)
@@ -191,7 +190,7 @@ File mypublic_key.asc adalah file yang akan dibagikan kepada teman-teman Anda. T
 d. Mengimport kunci publik orang lain. Silakan download file nim_teman_sebelah_anda.asc dan jalankan perintah ini untuk mengimport (menambahkan kunci publik orang lain ke sistem Anda) : gpg –-import nim_teman_sebelah_anda.asc
 
 - Tujuan: Menambahkan kunci publik rekan praktikan ke dalam sistem GPG lokal agar dapat melakukan enkripsi pesan kepada mereka.
-- Langkah: Mengunduh kunci publik teman (contoh: 103012440018.asc) dan menjalankan perintah gpg --import 103012440018.asc.
+- Langkah: Mengunduh kunci publik milik teman sekelas, yaitu Tri Mylani dari OneDrive (file: 2311104001.asc), kemudian menjalankan perintah gpg --import 2311104001.asc untuk memasukkannya ke dalam sistem.
 - Bukti: 
 
 ![5d](Image/5d.jpeg)
@@ -199,9 +198,8 @@ d. Mengimport kunci publik orang lain. Silakan download file nim_teman_sebelah_a
 e. Buatlah file bernama file_rahasia.txt. Isi file tersebut dengan pesan rahasia Anda. Pesan inilah yang akan Anda kirim ke teman Anda. Jalankan perintah ini untuk melakukan enkripsi : //ditulis dalam satu baris
 gpg –-encrypt –-armor -r alamat_email_teman_anda_yang_baru_diimport@xxx.com file_rahasia.txt
 
-- Tujuan: Mengamankan pesan rahasia sehingga hanya pemilik kunci privat yang dituju yang dapat membukanya.
-- Langkah: Membuat file pesan.txt dengan perintah echo, kemudian menjalankan perintah gpg --encrypt --recipient [email_teman] pesan.txt.
-- Catatan: Muncul peringatan "There is no assurance this key belongs to the named user", yang menandakan kunci publik belum ditandatangani (signed). Proses dilanjutkan dengan mengonfirmasi pilihan "y" untuk melanjutkan enkripsi.
+- Tujuan: Mengamankan pesan rahasia sehingga hanya pemilik kunci privat yang dituju (Tri Mylani) yang dapat membukanya.
+- Langkah: Membuat file teks berisi pesan rahasia. Selanjutnya, melakukan enkripsi menggunakan perintah gpg --encrypt --armor -r melani@gmail.com file_rahasia.txt. File hasil enkripsi (file_rahasia.txt.asc) kemudian diubah namanya menjadi file_rahasia_untuk_2311104001.asc menggunakan perintah mv dan diunggah kembali ke OneDrive.
 - Bukti: 
 
 ![5e](Image/5e.jpeg)
@@ -209,9 +207,8 @@ gpg –-encrypt –-armor -r alamat_email_teman_anda_yang_baru_diimport@xxx.com 
 f.  Hanya teman anda yang dapat membuka file tersebut. Hasil dari proses tersebut adalah file_rahasia_untuk_teman_anda.asc (contoh: file_rahasia_untuk_130118yyyy.asc) Taruh file_rahasia_untuk_teman_anda.asc ke folder pada link: http://tiny.cc/SisopNomor5F
 Download dan buka file yang diperuntukkan bagi Anda dan lakukan dekripsi untuk melihat isi pesan dengan perintah : pg file_rahasia_nim_anda.asc
 
-- Tujuan: Membuka file terenkripsi untuk membaca pesan rahasia menggunakan kunci privat yang sesuai.
-- Langkah: Melakukan dekripsi file dengan perintah gpg -d pesan.txt.gpg > hasil_buka_pesan.txt, kemudian membaca isi file dengan cat hasil_buka_pesan.txt.
-- Catatan: Dekripsi dilakukan untuk menguji validitas enkripsi. Proses ini berhasil mengembalikan pesan ke format teks asli, yang membuktikan bahwa kunci privat yang digunakan sesuai dengan kunci publik saat enkripsi.
+- Tujuan: Membuka file terenkripsi dari teman rekan praktikan untuk membaca pesan rahasia menggunakan kunci privat milik sendiri.
+- Langkah: Mengunduh file rahasia yang ditujukan untuk NIM 2311104002 dari folder OneDrive. Kemudian melakukan dekripsi file tersebut menggunakan perintah gpg -d [nama_file_dari_teman].asc. Sistem akan meminta passphrase (password) dari kunci privat untuk memverifikasi dan menampilkan isi pesan.
 - Bukti: 
 
 ![5f](Image/5f.jpeg)
